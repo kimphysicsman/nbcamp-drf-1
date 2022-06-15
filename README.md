@@ -56,13 +56,13 @@ print_info(name='dongwoo', year=29, weight=75, height=176)
 
 - example
 > ```python
-from django.db import models
+>from django.db import models
 >
-class AbstractCar(models.Model):
-    manufacturer = models.ForeignKey('Manufacturer', on_delete=models.CASCADE)
+>class AbstractCar(models.Model):
+>    manufacturer = models.ForeignKey('Manufacturer', on_delete=models.CASCADE)
 >
-    class Meta:
-        abstract = True
+>    class Meta:
+>        abstract = True
 > ```
 
 - on_delete option
@@ -90,9 +90,9 @@ null=False와 unique=True의 의미를 가지고 객체는 단하나의 primary 
 >
 > A QuerySet is a collection of data from a database.
 >
-A QuerySet is built up as a list of objects.
+> A QuerySet is built up as a list of objects.
 >
-QuerySets makes it easier to get the data you actually need, by allowing you to filter and order the data.
+> QuerySets makes it easier to get the data you actually need, by allowing you to filter and order the data.
 
 ### 5. 출처
 - mutable vs immutable in python 
